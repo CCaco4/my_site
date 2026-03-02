@@ -1,11 +1,83 @@
- <!DOCTYPE html>
-<html>
-<head>
-<title>Title of the document</title>
-</head>
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Landing page moderna e accessibile per un e-commerce con accesso e registrazione."
+    />
+    <title>ShopWave | Home</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenuto-principale">Salta al contenuto principale</a>
 
-<body>
-The content of the document......
-</body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a class="logo" href="index.html" aria-label="ShopWave - vai alla home">ShopWave</a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="nav-principale"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+        <nav id="nav-principale" class="main-nav" aria-label="Navigazione principale">
+          <ul>
+            <li><a aria-current="page" href="index.html">Home</a></li>
+            <li><a href="pages/shop.html">Shop</a></li>
+            <li><a href="pages/login.html">Login</a></li>
+            <li><a href="pages/register.html">Registrazione</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-</html> 
+    <main id="contenuto-principale">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <p class="eyebrow">Nuova Collezione 2026</p>
+          <h1 id="hero-title">Benvenuto su ShopWave</h1>
+          <p>
+            Un template e-commerce moderno, responsive e progettato per essere accessibile secondo
+            gli standard WCAG 2.1 livello AA.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="pages/shop.html">Esplora prodotti</a>
+            <a class="button secondary" href="pages/register.html">Crea un account</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="highlights" aria-labelledby="highlights-title">
+        <div class="container">
+          <h2 id="highlights-title">Perché scegliere ShopWave</h2>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Spedizione rapida</h3>
+              <p>Placeholder: consegne veloci in tutta Italia in 24/48 ore.</p>
+            </article>
+            <article class="card">
+              <h3>Pagamenti sicuri</h3>
+              <p>Placeholder: transazioni protette con metodi di pagamento affidabili.</p>
+            </article>
+            <article class="card">
+              <h3>Supporto dedicato</h3>
+              <p>Placeholder: assistenza clienti disponibile tramite chat ed email.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; 2026 ShopWave. Tutti i diritti riservati.</p>
+        <a href="#">Privacy (placeholder)</a>
+      </div>
+    </footer>
+  </body>
+</html>
