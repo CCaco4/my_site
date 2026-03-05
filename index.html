@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Landing page moderna e accessibile per un e-commerce con accesso e registrazione."
+      content="Ruzzon Wood Design - progettazione e realizzazione di arredi su misura in legno."
     />
-    <title>ShopWave | Home</title>
+    <title>Ruzzon Wood Design | Home</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <script defer src="assets/js/main.js"></script>
   </head>
@@ -16,21 +16,18 @@
 
     <header class="site-header">
       <div class="container header-content">
-        <a class="logo" href="index.html" aria-label="ShopWave - vai alla home">ShopWave</a>
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-controls="nav-principale"
-          aria-expanded="false"
-        >
+        <a class="logo" href="index.html" aria-label="Ruzzon Wood Design - vai alla home">
+          Ruzzon Wood Design
+        </a>
+        <button class="menu-toggle" type="button" aria-controls="nav-principale" aria-expanded="false">
           Menu
         </button>
         <nav id="nav-principale" class="main-nav" aria-label="Navigazione principale">
           <ul>
             <li><a aria-current="page" href="index.html">Home</a></li>
-            <li><a href="pages/shop.html">Shop</a></li>
-            <li><a href="pages/login.html">Login</a></li>
-            <li><a href="pages/register.html">Registrazione</a></li>
+            <li><a href="pages/shop.html">Progetti</a></li>
+            <li><a href="pages/login.html">Servizi</a></li>
+            <li><a href="pages/register.html">Contatti</a></li>
           </ul>
         </nav>
       </div>
@@ -38,45 +35,69 @@
 
     <main id="contenuto-principale">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="container">
-          <p class="eyebrow">Nuova Collezione 2026</p>
-          <h1 id="hero-title">Benvenuto su ShopWave</h1>
-          <p>
-            Un template e-commerce moderno, responsive e progettato per essere accessibile secondo
-            gli standard WCAG 2.1 livello AA.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="pages/shop.html">Esplora prodotti</a>
-            <a class="button secondary" href="pages/register.html">Crea un account</a>
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Falegnameria artigianale</p>
+            <h1 id="hero-title">Arredi in legno su misura per case e spazi professionali</h1>
+            <p>
+              Realizziamo progetti unici: cucine, librerie, tavoli, boiserie e soluzioni personalizzate.
+              Dalla progettazione al montaggio, seguiamo ogni fase con cura artigianale.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="pages/shop.html">Guarda i progetti</a>
+              <a class="button secondary" href="pages/register.html">Richiedi un preventivo</a>
+            </div>
+          </div>
+          <div class="hero-media" aria-hidden="true">
+            <div class="media-placeholder">Laboratorio & Design</div>
           </div>
         </div>
       </section>
 
-      <section class="highlights" aria-labelledby="highlights-title">
+      <section class="section" aria-labelledby="about-title">
         <div class="container">
-          <h2 id="highlights-title">Perché scegliere ShopWave</h2>
+          <h2 id="about-title">Chi siamo</h2>
+          <p>
+            Ruzzon Wood Design nasce dalla passione per il legno e per la progettazione su misura.
+            Uniamo tecniche tradizionali e strumenti moderni per creare ambienti funzionali, caldi e
+            duraturi.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-alt" aria-labelledby="services-title">
+        <div class="container">
+          <h2 id="services-title">Cosa facciamo</h2>
           <div class="card-grid">
             <article class="card">
-              <h3>Spedizione rapida</h3>
-              <p>Placeholder: consegne veloci in tutta Italia in 24/48 ore.</p>
+              <h3>Progettazione personalizzata</h3>
+              <p>Analisi dello spazio, rilievo misure e sviluppo della soluzione più adatta.</p>
             </article>
             <article class="card">
-              <h3>Pagamenti sicuri</h3>
-              <p>Placeholder: transazioni protette con metodi di pagamento affidabili.</p>
+              <h3>Produzione artigianale</h3>
+              <p>Lavorazione di legni selezionati con attenzione a qualità, dettagli e finiture.</p>
             </article>
             <article class="card">
-              <h3>Supporto dedicato</h3>
-              <p>Placeholder: assistenza clienti disponibile tramite chat ed email.</p>
+              <h3>Montaggio e assistenza</h3>
+              <p>Installazione professionale e supporto post-consegna per ogni realizzazione.</p>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="projects-title">
+        <div class="container">
+          <h2 id="projects-title">Realizzazioni</h2>
+          <p>Scopri una selezione di cucine, living, camere e ambienti contract realizzati su misura.</p>
+          <a class="text-link" href="pages/shop.html">Vai alla galleria progetti →</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-content">
-        <p>&copy; 2026 ShopWave. Tutti i diritti riservati.</p>
-        <a href="#">Privacy (placeholder)</a>
+        <p>&copy; 2026 Ruzzon Wood Design. Tutti i diritti riservati.</p>
+        <a href="pages/register.html">Contattaci</a>
       </div>
     </footer>
   </body>
