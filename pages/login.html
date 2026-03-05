@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Accedi a ShopWave." />
-    <title>ShopWave | Login</title>
+    <meta name="description" content="Servizi di progettazione e falegnameria Ruzzon Wood Design." />
+    <title>Ruzzon Wood Design | Servizi</title>
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <script defer src="../assets/js/auth.js"></script>
     <script defer src="../assets/js/main.js"></script>
   </head>
   <body>
@@ -14,62 +13,55 @@
 
     <header class="site-header">
       <div class="container header-content">
-        <a class="logo" href="../index.html" aria-label="ShopWave - vai alla home">ShopWave</a>
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-controls="nav-principale"
-          aria-expanded="false"
-        >
-          Menu
-        </button>
+        <a class="logo" href="../index.html" aria-label="Ruzzon Wood Design - vai alla home">
+          Ruzzon Wood Design
+        </a>
+        <button class="menu-toggle" type="button" aria-controls="nav-principale" aria-expanded="false">Menu</button>
         <nav id="nav-principale" class="main-nav" aria-label="Navigazione principale">
           <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a aria-current="page" href="login.html">Login</a></li>
-            <li><a href="register.html">Registrazione</a></li>
+            <li><a href="shop.html">Progetti</a></li>
+            <li><a aria-current="page" href="login.html">Servizi</a></li>
+            <li><a href="register.html">Contatti</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main id="contenuto-principale" class="form-page">
-      <div class="container narrow">
-        <h1>Accedi al tuo account</h1>
-        <p>Inserisci le tue credenziali per continuare.</p>
+    <main id="contenuto-principale">
+      <section class="section" aria-labelledby="services-page-title">
+        <div class="container narrow">
+          <h1 id="services-page-title">Servizi</h1>
+          <p>
+            Offriamo un servizio completo per trasformare idee e spazi in arredi in legno unici.
+          </p>
 
-        <form id="login-form" class="auth-form" novalidate>
-          <div class="form-group">
-            <label for="login-email">Email</label>
-            <input id="login-email" name="email" type="email" autocomplete="email" required />
-            <p id="login-email-error" class="error-message" aria-live="polite"></p>
+          <div class="service-list">
+            <article class="service-item">
+              <h2>1. Consulenza iniziale</h2>
+              <p>Incontro conoscitivo, raccolta esigenze e budget di riferimento.</p>
+            </article>
+            <article class="service-item">
+              <h2>2. Rilievo e progettazione</h2>
+              <p>Rilievo tecnico in loco, proposta progettuale e studio dei materiali.</p>
+            </article>
+            <article class="service-item">
+              <h2>3. Produzione interna</h2>
+              <p>Realizzazione in laboratorio con controllo qualità su ogni fase.</p>
+            </article>
+            <article class="service-item">
+              <h2>4. Installazione finale</h2>
+              <p>Consegna, montaggio e verifica finale con il cliente.</p>
+            </article>
           </div>
-
-          <div class="form-group">
-            <label for="login-password">Password</label>
-            <input
-              id="login-password"
-              name="password"
-              type="password"
-              autocomplete="current-password"
-              required
-              minlength="8"
-            />
-            <p id="login-password-error" class="error-message" aria-live="polite"></p>
-          </div>
-
-          <button type="submit" class="button primary full-width">Entra</button>
-          <p class="helper-text">Non hai un account? <a href="register.html">Registrati</a>.</p>
-          <p id="login-status" class="status-message" aria-live="polite"></p>
-        </form>
-      </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-content">
-        <p>&copy; 2026 ShopWave. Tutti i diritti riservati.</p>
-        <a href="#">Termini (placeholder)</a>
+        <p>&copy; 2026 Ruzzon Wood Design. Tutti i diritti riservati.</p>
+        <a href="register.html">Parliamo del tuo progetto</a>
       </div>
     </footer>
   </body>

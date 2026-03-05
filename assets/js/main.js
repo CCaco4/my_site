@@ -6,4 +6,13 @@ if (menuButton && mainNav) {
     const isOpen = mainNav.classList.toggle('open');
     menuButton.setAttribute('aria-expanded', String(isOpen));
   });
+
+  mainNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (mainNav.classList.contains('open')) {
+        mainNav.classList.remove('open');
+        menuButton.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
 }
